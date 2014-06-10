@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin : 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header {
+	background: #000;
+	line-height: 2em;
+	/*padding: 0 20px;*/
+}
+.header a { display: inline-block; padding: 0 20px; color: #fff; font-weight: bold; text-decoration: none;}
+.header a:hover {opacity: .5}
+
+.main {padding: 20px;}
+
+.footer { 
+background: #ccc;
+position: absolute;
+bottom: 0;
+width: 100%;
+line-height: 2em;
+}
+.footer .inner {padding: 0 20px;}
