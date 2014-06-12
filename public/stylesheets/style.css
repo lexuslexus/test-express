@@ -1,7 +1,7 @@
-body {
+body, p {
   padding: 0;
   margin : 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px/inherit "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -11,10 +11,12 @@ a {
 .header {
 	background: #000;
 	line-height: 2em;
+	color:#fff;
 	/*padding: 0 20px;*/
 }
 .header a { display: inline-block; padding: 0 20px; color: #fff; font-weight: bold; text-decoration: none;}
 .header a:hover {opacity: .5}
+.header .account { float: right;}
 
 .main {padding: 20px;}
 

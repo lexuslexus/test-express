@@ -1,6 +1,14 @@
-
 <div class="header">
-  <a href="#">index1</a>
-  <a href="#">login</a>
-  <a href="#">registry</a>
+<%if(user){%>
+	<!-- 已登录 -->
+	<a href="/">index</a>
+	<a href="/post">post</a>
+	<p class="account">欢迎回来，<%=user.name%> <a href="/logout">logout</a></p>
+<%}else{%>
+	<!-- 未登录 -->
+	<a href="/">index</a>
+	<a href="/login">login</a>
+	<a href="/reg">registry</a>
+<%}%>
 </div>
+	

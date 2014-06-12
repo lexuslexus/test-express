@@ -8,10 +8,23 @@
     <%-include header%>
     <div class="main">
     	<h1>Index</h1>
-    	<div>this is index12</div>
-    	
+      <%if(success){%>
+        <%=success%>
+      <%}%>
+      <%if(error){%>
+        <%=error%>
+      <%}%>
     </div>
-	
+    
+    <%if(postList){%>
+    <dl>
+      <%postList.forEach(function(v, k){%>
+        <dt><%=v.title%></dt>
+        <dd><%=v.content%></dd>
+      <%})%>
+      
+    </dl>
+	  <%}%>
     <%-include footer%>
   </body>
 </html>
